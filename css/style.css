@@ -18,7 +18,6 @@ body{
     width: 33%;
 }
 #menu ul{
-    margin-right: 50px;
     margin-left: 10%;
 }
 #menu ul li {
@@ -29,7 +28,7 @@ body{
     text-decoration: none;
     color: grey;
 }
-#menu ul li:hover {
+#menu ul li a:hover {
     border-top: 2px solid #69f542;
     padding-top: 29px;
 }
@@ -72,4 +71,42 @@ left: 30%;
 .texte{
     width: 50%;
     margin-left: 5%;
+}
+
+@media screen and (max-width: 1000px)
+{
+    #slider{
+        display: none;
+    }
+    .texte{
+        width:60%;
+    }
+    #menu ul{
+        margin: 0;
+    }
+    #logoHopeMenu{
+        margin-left: 0;
+    }
+    #association{
+        padding-top: 27%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #logoHope{
+        width: 210px;
+        margin-left: inherit;
+    }
+    #menu{
+        flex-direction: column;
+        height: 13%;
+    }
+    #menu a{
+        font-size: 1.7em;
+    }
+    p{
+        font-size: 1.4em;
+    }
+    #menu h2{
+        display: none;
+    }
 }
